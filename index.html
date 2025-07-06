@@ -9,9 +9,9 @@
 </head>
 <body>
     <!-- 装饰云朵 -->
-    <div class="cloud"></div>
-    <div class="cloud"></div>
-    <div class="cloud"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
     
     <!-- 导航栏 -->
     <header>
@@ -41,9 +41,13 @@
     <section id="home" class="page active home-page">
         <div class="container">
             <div class="hero-content">
-                <h1>你好，我是<span>钟瑞</span></h1>
-                <p>用喜欢的事，填满生活</p>
-                <p>“生活总要有大大小小的热爱，按自己的节奏做喜欢的事，保持热爱，总会有很多瞬间告诉你——生活温柔且浪漫。”</p>
+                <h1>你好，我是<span>钟瑞</span><br>
+				Hello, I'm <span>Ray Zhong</span></h1>
+                <p>用喜欢的事，填满生活<br>
+				Fill your life with the things you love</p>
+                <p>“生活总要有大大小小的热爱，按自己的节奏做喜欢的事，保持热爱，总会有很多瞬间告诉你——生活温柔且浪漫。”<br>
+				"Life always requires various degrees of passion. Follow your own pace and do the things you love.
+				Keep your passion alive, and there will be many moments telling you - life is gentle and romantic."</p>
             </div>
             <div class="hero-image">
                 <img src="touxiang.jpg" alt="钟瑞照片">
@@ -55,7 +59,8 @@
     <section id="about" class="page">
         <div class="container">
             <div class="section-title">
-                <h2>关于我</h2>
+                <h2>关于我<br>
+				About Myself</h2>
                 <p> Statistics Student| Programming Enthusiast | Sporter</p>
             </div>
             
@@ -75,7 +80,7 @@
                             </div>
                         </div>
                         <div class="info-item">
-                            <i class="fas fa-trophy"></i>
+                            <i class="fas fa-computer"></i>
                             <div>
                                 <strong>编程语言</strong>
                                 <p>Python | R</p>
@@ -108,7 +113,8 @@
     <section id="skills" class="page">
         <div class="container">
             <div class="section-title">
-                <h2>编程技能</h2>
+                <h2>编程技能<br>
+				Programming Skill</h2>
                 <p>Talk is cheap. Show me the code.</p>
             </div>
     
@@ -166,27 +172,24 @@
     <section id="hobbies" class="page">
         <div class="container">
             <div class="section-title">
-                <h2>兴趣爱好</h2>
+                <h2>兴趣爱好<br>
+				Hobbies In Life</h2>
                 <p>To see the world ,things dangerous to come to,to see behind walls,to draw closer,</p>
 				<p>to find each other and to feel.That is the purpose of life.</p>
             </div>
             
             <div class="hobbies-nav">
 				<button class="hobby-btn active" data-hobby="basketball">
-				    <img src="basketball_icon.png" alt="运动" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-				    运动
+				    💪🏻运动
 				</button>
 				<button class="hobby-btn" data-hobby="music">
-				    <img src="music_icon.png" alt="音乐" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-				    音乐
+				    🎧音乐
 				</button>
 				<button class="hobby-btn" data-hobby="movies">
-				    <img src="movie_icon.png" alt="影视" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-				    影视
+				    📺影视
 				</button>
 				<button class="hobby-btn" data-hobby="books">
-				    <img src="book_icon.png" alt="书籍" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-				    书籍
+				    📖书籍
 				</button>
             </div>
             
@@ -194,7 +197,7 @@
             <div id="basketball" class="hobby-section active">
                 <div class="hobby-container">
                     <div class="hobby-header">
-                        <h3>🏀 Sport</h3>
+                        <h3>Sport</h3>
                     </div>
                     <div class="hobby-content">
                         <div class="hobby-card">
@@ -208,7 +211,7 @@
                         <div class="hobby-card">
                             <img class="hobby-img" src="sport_photo2.jpg" alt="健身">
                             <div class="hobby-card-content">
-                                <h4><i class="fas fa-trophy"></i> 健身</h4>
+                                <h4><i class="fas fa-dumbbell"></i> 健身</h4>
                                 <p>自律才能更自由</p>
                                 </div>
                             </div>
@@ -221,7 +224,7 @@
             <div id="music" class="hobby-section">
                 <div class="hobby-container">
                     <div class="hobby-header">
-                        <h3>🎵 Music</h3>
+                        <h3>Music</h3>
                     </div>
                     <div class="music-player">
                         <div class="now-playing">
@@ -303,21 +306,25 @@
             <div id="movies" class="hobby-section">
                 <div class="hobby-container">
                     <div class="hobby-header">
-                        <h3>🎬 My Favorite Movies</h3>
+                        <h3>Movies</h3>
                     </div>
                     <div class="hobby-content">
                         <div class="hobby-card">
                             <img class="hobby-img" src="movie_qingyunian.jpg" alt="电视剧">
                             <div class="hobby-card-content">
-                                <h4><i class="fas fa-film"></i> 《庆余年》</h4>
-                                <p> </p>
+                                <h4><i class="fas fa-film"></i>《庆余年》</h4>
+                                <p>主演：张若昀、李沁、陈道明、吴刚、辛芷蕾、宋轶、郭麒麟等。</p>
+								<p>剧情简介：某大学文学史专业的学生张庆熟读古典名著，但他用现代观念剖析古代文学史的论文命题不被叶教授所认可。为了让叶教授成为自己的研究生导师，
+								张庆决定通过写小说的方式，进一步阐述自己想要表达的观点。在他的小说中，身世神秘的少年——范闲，自小跟随奶奶生活在海边小城澹州，随着一位老师的突然造访，
+								他看似平静的生活开始直面重重的危机与考验。在神秘老师和一位蒙眼守护者的指点下，范闲熟识药性药理，修炼霸道真气并精进武艺，而后接连化解了诸多危局。
+								因对身世之谜的好奇，范闲离开澹州，前赴京都。在京都，范闲饱尝人间冷暖并坚守对正义、良善的坚持，书写了光彩的人生传奇。</p>
                                 <div class="hobby-stats">
                                     <div class="stat-item">
-                                        <div class="stat-value"></div>
+                                        <div class="stat-value">2019</div>
                                         <div class="stat-label">上映年份</div>
                                     </div>
                                     <div class="stat-item">
-                                        <div class="stat-value">电视剧</div>
+                                        <div class="stat-value">电视剧 | 古装</div>
                                         <div class="stat-label">类型</div>
                                     </div>
                                 </div>
@@ -327,15 +334,19 @@
                         <div class="hobby-card">
                             <img class="hobby-img" src="movie_meiguidegushi.jpg" alt="电视剧">
                             <div class="hobby-card-content">
-                                <h4><i class="fas fa-tv"></i> 《玫瑰的故事》</h4>
-                                <p> </p>
+                                <h4><i class="fas fa-tv"></i>《玫瑰的故事》</h4>
+								<p>主演：刘亦菲、佟大为、林更新、万茜、霍建华、彭冠英等。</p>
+                                <p>剧情简介：出生于书香世家的黄亦玫（刘亦菲 饰）一路在呵护中长大，从小便展露出艺术天赋。初入职场的黄亦玫很快受到重用，与合作伙伴庄国栋相识相爱，但最终错过彼此，
+								这段职场磨炼也令她对自己的人生有了更清晰的规划，决定重返校园求学深造。毕业后，她和学长方协文步入婚姻殿堂。可婚后两人发展方向相去甚远，最 终选择离婚。
+								黄亦玫开始创业，在艺术品策展领域打拼出一片天地，在此期间还遇到了自己的灵魂伴侣溥家明，可溥家明只剩几个月的生命，两人这段爱情最终以生死离别画上句号。
+								但黄亦玫没有就此消沉，她还是一如既往地为活出更精彩的自己而努力着。</p>
                                 <div class="hobby-stats">
                                     <div class="stat-item">
-                                        <div class="stat-value"></div>
+                                        <div class="stat-value">2024</div>
                                         <div class="stat-label">上映年份</div>
                                     </div>
                                     <div class="stat-item">
-                                        <div class="stat-value">电视剧</div>
+                                        <div class="stat-value">电视剧 | 现代都市</div>
                                         <div class="stat-label">类型</div>
                                     </div>
                                 </div>
@@ -345,15 +356,18 @@
                         <div class="hobby-card">
                             <img class="hobby-img" src="movie_sherlock.jpg" alt="电影">
                             <div class="hobby-card-content">
-                                <h4><i class="fas fa-chart-line"></i> 《神探夏洛克》</h4>
-                                <p></p>
+                                <h4><i class="fas fa-video"></i>《神探夏洛克》</h4>
+								<p>主演：本尼迪克特.康伯巴奇、马丁.费瑞曼等。</p>
+                                <p>剧情简介：夏洛克·福尔摩斯(本尼迪克特·康伯巴奇 Benedict Cumberbatch 饰)不仅是著名大侦探更是一名时尚潮人。和他的 好友兼得力助手约翰·华生（马丁·弗瑞曼 Martin Freeman 饰）
+								分别经历了离奇市民自杀案件、黑帮走私事件和倒计时炸弹杀人案。每一个案件看似独立其实都有联系，两人每解决一个案子，就又会出现新的难题和的受害无辜百姓。经过抽丝剥茧，
+								幕后黑手莫里亚蒂(安德鲁·斯科特 Andrew Scott 饰)终于浮出水面。</p>
                                 <div class="hobby-stats">
                                     <div class="stat-item">
-                                        <div class="stat-value"></div>
+                                        <div class="stat-value">2010</div>
                                         <div class="stat-label">上映年份</div>
                                     </div>
                                     <div class="stat-item">
-                                        <div class="stat-value">电影</div>
+                                        <div class="stat-value">电视剧 | 悬疑</div>
                                         <div class="stat-label">类型</div>
                                     </div>
                                 </div>
@@ -363,15 +377,18 @@
 						<div class="hobby-card">
 						    <img class="hobby-img" src="moive_interstellar.jpg" alt="电影">
 						    <div class="hobby-card-content">
-						        <h4><i class="fas fa-film"></i> 《星际穿越》</h4>
-						        <p></p>
+						        <h4><i class="fas fa-rocket"></i>《星际穿越》</h4>
+						        <p>主演：马修·麦康纳、安妮·海瑟薇、杰西卡·查斯坦等。</p>
+								<p>剧情简介：《星际穿越》的故事设定在未来的地球，环境恶化使人类面临生存危机，农作物接连死亡，粮食短缺，沙尘暴肆虐。主角库珀，一位前 NASA 飞行员，如今只能在农场里和子女艰难求生。
+								一次偶然的机会，库珀和女儿墨菲发现了神秘的二进制信号，顺着信号指引，他们来到了秘密的 NASA 基地。在这里，库珀得知了一项关乎人类命运的绝密计划：科学家们发现了一个突然出现的虫洞，
+								通过它或许能找到人类的新家园。为了拯救家人和全人类，库珀毅然决定加入宇航员小队，踏上穿越虫洞的冒险之旅。</p>
 						        <div class="hobby-stats">
 						            <div class="stat-item">
 						                <div class="stat-value">2014</div>
 						                <div class="stat-label">上映年份</div>
 						            </div>
 						            <div class="stat-item">
-						                <div class="stat-value">电影</div>
+						                <div class="stat-value">电影 | 科幻、冒险</div>
 						                <div class="stat-label">类型</div>
 						            </div>
 						        </div>
@@ -380,15 +397,20 @@
 						<div class="hobby-card">
 						    <img class="hobby-img" src="movie_inception.png" alt="电影">
 						    <div class="hobby-card-content">
-						        <h4><i class="fas fa-film"></i> 《盗梦空间》</h4>
-						        <p></p>
+						        <h4><i class="fas fa-globe"></i>《盗梦空间》</h4>
+								<p>主演：莱昂纳多.迪卡普里、艾伦.佩姬、约瑟夫.高登.莱维特等。</p>
+						        <p>剧情简介：道姆·柯布（莱昂纳多·迪卡普里奥 Leonardo DiCaprio 饰）与同事阿瑟（约瑟夫·戈登-莱维特 Joseph Gordon-Levitt 饰）和纳什（卢卡斯·哈斯 Lukas Haas 饰）在一次针对日本能源大亨齐藤（渡边谦 饰）
+								的盗梦行动中失败，反被齐藤利用。齐藤威逼利诱因遭通缉而流亡海外的柯布帮他拆分他竞争对手的公司，采取极端措施在其唯一继承人罗伯特·费希尔（希里安·墨菲 Cillian Murphy 饰）的深层潜意识中种下放弃家族公司、
+								自立门户的想法。为了重返美国，柯布偷偷求助于岳父迈尔斯（迈克尔·凯恩 Michael Caine 饰），吸收了年轻的梦境设计师艾里阿德妮（艾伦·佩吉 Ellen Page 饰）、梦境演员艾姆斯（汤姆·哈迪 Tom Hardy 饰）
+								和药剂师约瑟夫（迪利普·劳 Dileep Rao 饰）加入行动。在一层层递进的梦境中，柯布不仅要对付费希尔潜意识的本能反抗，还必须直面已逝妻子梅尔（玛丽昂·歌迪亚 Marion Cotillard 饰）的处处破坏，
+								实际情况远比预想危险得多……</p>
 						        <div class="hobby-stats">
 						            <div class="stat-item">
 						                <div class="stat-value">2010</div>
 						                <div class="stat-label">上映年份</div>
 						            </div>
 						            <div class="stat-item">
-						                <div class="stat-value">电影</div>
+						                <div class="stat-value">电影 | 动作、科幻、悬疑</div>
 						                <div class="stat-label">类型</div>
 						            </div>
 						        </div>
@@ -397,15 +419,16 @@
 						<div class="hobby-card">
 						    <img class="hobby-img" src="movie_xianni.png" alt="动漫">
 						    <div class="hobby-card-content">
-						        <h4><i class="fas fa-film"></i> 《仙逆》</h4>
-						        <p></p>
+						        <h4><i class="fas fa-spinner"></i>《仙逆》</h4>
+						        <p>《仙逆》是一部根据耳根笔下的仙侠网络小说改编的武侠网络动画，讲述了一个平凡少年王林逆仙而修，求的不仅是长生，更多的是摆脱那背后的蝼蚁之身。他坚信道在人为，以平庸的资质踏入修真仙途，历经坎坷风雨，凭着其聪睿的心智，
+								一步一步走向巅峰，凭一己之力，扬名修真界。</p>
 						        <div class="hobby-stats">
 						            <div class="stat-item">
-						                <div class="stat-value">2024</div>
+						                <div class="stat-value">2023</div>
 						                <div class="stat-label">上映年份</div>
 						            </div>
 						            <div class="stat-item">
-						                <div class="stat-value">动漫</div>
+						                <div class="stat-value">动漫 | 修仙</div>
 						                <div class="stat-label">类型</div>
 						            </div>
 						        </div>
@@ -419,15 +442,16 @@
             <div id="books" class="hobby-section">
                 <div class="hobby-container">
                     <div class="hobby-header">
-                        <h3>📚 Book</h3>
+                        <h3>Book</h3>
                     </div>
                     <div class="books-grid">
                         <div class="book-card">
                             <img class="book-img" src="book_python.jpg" alt="Python编程从入门到实践">
                             <div class="book-info">
-                                <h4>《Python编程:从入门到实践》</h4>
-                                <span class="author">Eric Mathers</span>
-                                <p>这本书是统计学入门的经典教材，深入浅出地介绍了各种统计学习方法，包括线性回归、分类、重采样方法等。</p>
+                                <h4><i class="fas fa-book"></i>《Python编程:从入门到实践》</h4>
+                                <span class="author">作者：Eric Mathers</span>
+                                <p>全书分两部分：第一部分介绍用Python 编程所必须了解的基本概念，包括matplotlib、NumPy 和Pygal 等强大的Python 库和工具介绍，以及列表、字典、if 语句、类、文件与异常、代码测试等内容；第二部分将理论付诸实践，
+								讲解如何开发三个项目，包括简单的Python 2D 游戏开发如何利用数据生成交互式的信息图，以及创建和定制简单的Web 应用，并帮读者解决常见编程问题和困惑。</p>
                                 <div class="rating">★★★★★</div>
                             </div>
                         </div>
@@ -435,9 +459,10 @@
                         <div class="book-card">
                             <img class="book-img" src="book_R.jpg" alt="R语言入门与实践">
                             <div class="book-info">
-                                <h4>《R语言入门与实践》</h4>
-                                <span class="author">Garrett Grolemund</span>
-                                <p>中国科幻文学的里程碑之作，讲述了地球人类文明和三体文明的信息交流、生死搏杀及两个文明在宇宙中的兴衰历程。</p>
+                                <h4><i class="fas fa-bookmark"></i>《R语言入门与实践》</h4>
+                                <span class="author">作者：Garrett Grolemund</span>
+                                <p>本书通过三个精心挑选的例子，深入浅出地讲解如何使用R语言玩转数据。书中涵盖R语言编程的方方面面，内容涉及R对象的类型、R的记号体系和环境系统、自定义函数、if else语句、for循环、S3类、R的包系统以及调试工具等。
+								本书还通过示例演示如何进行向量化编程，从而对代码进行提速并尽可能地发挥R的潜能。</p>
                                 <div class="rating">★★★★★</div>
                             </div>
                         </div>
@@ -445,9 +470,10 @@
                         <div class="book-card">
                             <img class="book-img" src="book_deeplearn.jpg" alt="Python深度学习">
                             <div class="book-info">
-                                <h4>《Python深度学习》</h4>
-                                <span class="author">François Chalé</span>
-                                <p>这本书讲述了人类从石器时代至21世纪的演化与发展史，并将人类历史分为四个阶段：认知革命、农业革命、人类的融合统一与科学革命。</p>
+                                <h4><i class="fas fa-book-open"></i>《Python深度学习》</h4>
+                                <span class="author">作者：François Chalé</span>
+                                <p>本书由Keras之父、现任Google人工智能研究员的弗朗索瓦·肖莱（François Chollet）执笔，详尽介绍了用Python和Keras进行深度学习的探索实践，涉及计算机视觉、自然语言处理、生成式模型等应用。书中包含30多个代码示例，
+								步骤讲解详细透彻。由于本书立足于人工智能的可达性和大众化，读者无须具备机器学习相关背景知识即可展开阅读。在学习完本书后，读者将具备搭建自己的深度学习环境、建立图像识别模型、生成图像和文字等能力。</p>
                                 <div class="rating">★★★★★</div>
                             </div>
                         </div>
@@ -462,7 +488,8 @@
     <section id="contact" class="page">
         <div class="container">
             <div class="section-title">
-                <h2>联系我</h2>
+                <h2>联系我<br>
+				Contact Information</h2>
                 <p>Among millions of people, it's fortunate to meet you.</p>
             </div>
     

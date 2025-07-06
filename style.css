@@ -256,44 +256,46 @@
         
         /* 装饰元素 */
         .cloud {
-            position: absolute;
-            background: white;
-            border-radius: 50%;
-            opacity: 0.9;
-            z-index: 1;
-            animation: float 15s infinite linear;
+          position: absolute;
+          background: #fff;
+          border-radius: 50%;
+          opacity: 0.9;
+          animation: floatCloud 60s linear infinite;
+          box-shadow:
+            -40px 0px 0px 0px #fff,
+            -20px -20px 0px 0px #fff,
+            20px -10px 0px 0px #fff,
+            40px 0px 0px 0px #fff;
         }
         
-        .cloud:nth-child(1) {
-            top: 10%;
-            left: 5%;
-            width: 120px;
-            height: 60px;
-            animation-duration: 20s;
+        .cloud-1 {
+          width: 120px;
+          height: 60px;
+          top: 10%;
+          left: 5%;
+          animation-duration: 40s;
         }
         
-        .cloud:nth-child(2) {
-            top: 25%;
-            right: 10%;
-            width: 150px;
-            height: 75px;
-            animation-duration: 25s;
-            animation-delay: -5s;
+        .cloud-2 {
+          width: 150px;
+          height: 75px;
+          top: 25%;
+          right: 10%;
+          animation-duration: 55s;
         }
         
-        .cloud:nth-child(3) {
-            bottom: 20%;
-            left: 15%;
-            width: 100px;
-            height: 50px;
-            animation-duration: 18s;
-            animation-delay: -3s;
+        .cloud-3 {
+          width: 100px;
+          height: 50px;
+          bottom: 20%;
+          left: 15%;
+          animation-duration: 45s;
         }
         
-        @keyframes float {
-            0% { transform: translateX(0) translateY(0); }
-            50% { transform: translateX(50px) translateY(-10px); }
-            100% { transform: translateX(0) translateY(0); }
+        @keyframes floatCloud {
+          0%   { transform: translateX(0); }
+          50%  { transform: translateX(60px); }
+          100% { transform: translateX(0); }
         }
         
         /* 关于页面样式 */
