@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钟瑞 | 统计学本科生</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 装饰云朵 -->
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo nav-link" data-page="home">
+                    <div class="logo-img">
+                        <img src="logo.png" alt="logo" style="width: 100%; height: 100%; border-radius: 50%;">
+                    </div>
+                    <span>RuiaaZ</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-page="home">首页</a></li>
+                    <li><a href="#about" class="nav-link" data-page="about">关于我</a></li>
+                    <li><a href="#skills" class="nav-link" data-page="skills">技能</a></li>
+                    <li><a href="#hobbies" class="nav-link" data-page="hobbies">兴趣爱好</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">联系我</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首页 -->
+    <section id="home" class="page active home-page">
+        <div class="container">
+            <div class="hero-content">
+                <h1>你好，我是<span>钟瑞</span></h1>
+                <p>用喜欢的事，填满生活</p>
+                <p>“生活总要有大大小小的热爱，按自己的节奏做喜欢的事，保持热爱，总会有很多瞬间告诉你——生活温柔且浪漫。”</p>
+            </div>
+            <div class="hero-image">
+                <img src="touxiang.jpg" alt="钟瑞照片">
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于页面 -->
+    <section id="about" class="page">
+        <div class="container">
+            <div class="section-title">
+                <h2>关于我</h2>
+                <p> Statistics Student| Programming Enthusiast | Sporter</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>LOVE LIFE</h3>
+                    <p>我是广西师范大学统计学专业的一名本科生，目前大三在读。</p>
+                    <p>在课堂之外，我对机器学习感兴趣，特别是深度学习部分，希望未来可以自己实现一个人脸识别系统，目前还在学习。
+					此外，还喜欢研究各种可以使用编程制作出来的东西，例如制作了个人网站，下一个目标是制作微信小程序。</p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>教育背景</strong>
+                                <p>广西师范大学 | 本科 | 统计学</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <strong>编程语言</strong>
+                                <p>Python | R</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>所在地</strong>
+                                <p>中国 | 桂林</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <strong>兴趣爱好</strong>
+                                <p>运动、音乐、影视、阅读</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="about-me.png" alt="校园生活" style="width:100%; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能页面 -->
+    <section id="skills" class="page">
+        <div class="container">
+            <div class="section-title">
+                <h2>编程技能</h2>
+                <p>Talk is cheap. Show me the code.</p>
+            </div>
+    
+            <div class="skills-container">
+                <!-- Python -->
+                <div class="skill-card">
+                    <img class="skill-logo" src="skill_python.png" alt="Python">
+                    <div class="skill-content">
+                        <h3>Python</h3>
+                        <p>Python 是一门功能强大的编程语言，广泛应用于数据分析、人工智能与自动化任务，语法简洁、易于上手。</p>
+                    </div>
+                </div>
+    
+                <!-- R -->
+                <div class="skill-card">
+                    <img class="skill-logo" src="skill_r.png" alt="R">
+                    <div class="skill-content">
+                        <h3>R语言</h3>
+                        <p>R 是统计分析的专业工具，拥有强大的可视化与建模能力，适合做回归分析、时间序列分析与绘图。</p>
+                    </div>
+                </div>
+    
+                <!-- HTML -->
+                <div class="skill-card">
+                    <img class="skill-logo" src="skill_html.png" alt="HTML">
+                    <div class="skill-content">
+                        <h3>HTML</h3>
+                        <p>HTML 是网页结构的核心语言，用于构建网页的内容框架，是前端开发的基础技能之一。</p>
+                    </div>
+                </div>
+    
+                <!-- CSS -->
+                <div class="skill-card">
+                    <img class="skill-logo" src="skill_css.png" alt="CSS">
+                    <div class="skill-content">
+                        <h3>CSS</h3>
+                        <p>CSS 主要用于网页的样式设计，可以控制颜色、布局、字体等，是实现网页美观的关键技术。</p>
+                    </div>
+                </div>
+    
+                <!-- JavaScript -->
+                <div class="skill-card">
+                    <img class="skill-logo" src="skill_javascript.png" alt="JavaScript">
+                    <div class="skill-content">
+                        <h3>JavaScript</h3>
+                        <p>JavaScript 是网页交互的灵魂语言，能实现动态效果、数据交互等，是现代前端开发的核心技术之一。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 兴趣爱好页面 -->
+    <section id="hobbies" class="page">
+        <div class="container">
+            <div class="section-title">
+                <h2>兴趣爱好</h2>
+                <p>To see the world ,things dangerous to come to,to see behind walls,to draw closer,</p>
+				<p>to find each other and to feel.That is the purpose of life.</p>
+            </div>
+            
+            <div class="hobbies-nav">
+				<button class="hobby-btn active" data-hobby="basketball">
+				    <img src="basketball_icon.png" alt="运动" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+				    运动
+				</button>
+				<button class="hobby-btn" data-hobby="music">
+				    <img src="music_icon.png" alt="音乐" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+				    音乐
+				</button>
+				<button class="hobby-btn" data-hobby="movies">
+				    <img src="movie_icon.png" alt="影视" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+				    影视
+				</button>
+				<button class="hobby-btn" data-hobby="books">
+				    <img src="book_icon.png" alt="书籍" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+				    书籍
+				</button>
+            </div>
+            
+            <!-- 篮球部分 -->
+            <div id="basketball" class="hobby-section active">
+                <div class="hobby-container">
+                    <div class="hobby-header">
+                        <h3>🏀 Sport</h3>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-card">
+                            <img class="hobby-img" src="sport_photo1.jpg" alt="篮球">
+                            <div class="hobby-card-content">
+                                <h4><i class="fas fa-basketball-ball"></i> 篮球</h4>
+                                <p>篮球是少年疲惫生活里的英雄</p>
+                            </div>
+                        </div>
+                        
+                        <div class="hobby-card">
+                            <img class="hobby-img" src="sport_photo2.jpg" alt="健身">
+                            <div class="hobby-card-content">
+                                <h4><i class="fas fa-trophy"></i> 健身</h4>
+                                <p>自律才能更自由</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 音乐部分 -->
+            <div id="music" class="hobby-section">
+                <div class="hobby-container">
+                    <div class="hobby-header">
+                        <h3>🎵 Music</h3>
+                    </div>
+                    <div class="music-player">
+                        <div class="now-playing">
+                            <h3 id="current-song">形容</h3>
+                            <p id="current-artist">沈以诚</p>
+                        </div>
+                        
+                        <div class="player-controls">
+                            <button class="control-btn prev-btn">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+                            <button class="control-btn play-pause-btn play-pause">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="control-btn next-btn">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="progress-container">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        
+                        <div class="time-info">
+                            <span id="current-time">0:00</span>
+                            <span id="duration">0:00</span>
+                        </div>
+                        
+                        <div class="volume-container">
+                            <i class="fas fa-volume-up"></i>
+                            <div class="volume-slider">
+                                <div class="volume-progress" id="volume-progress"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="playlist">
+                            <h3>我的喜欢歌曲</h3>
+                            <div class="playlist-item active" data-src="music1.mp3">
+                                <img src="music-photo1.png" alt="形容">
+                                <div class="playlist-info">
+                                    <h4>形容</h4>
+                                    <p>沈以诚 | 流行</p>
+                                </div>
+                                <div class="duration">3:45</div>
+                            </div>
+                            
+                            <div class="playlist-item" data-src="music2.flac">
+                                <img src="music-photo2.png" alt="稻香">
+                                <div class="playlist-info">
+                                    <h4>稻香</h4>
+                                    <p>周杰伦 | 流行</p>
+                                </div>
+                                <div class="duration">3:43</div>
+                            </div>
+                            
+                            <div class="playlist-item" data-src="music3.mp3">
+                                <img src="music-photo3.png" alt="爱我还是爱他">
+                                <div class="playlist-info">
+                                    <h4>爱我还是爱他</h4>
+                                    <p>陶喆 | 流行</p>
+                                </div>
+                                <div class="duration">4:52</div>
+                            </div>
+                            
+                            <div class="playlist-item" data-src="music4.mp3">
+                                <img src="music-photo4.png" alt="我们的明天">
+                                <div class="playlist-info">
+                                    <h4>我们的明天</h4>
+                                    <p>鹿晗 | 流行</p>
+                                </div>
+                                <div class="duration">3:52</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 电影与电视剧部分 -->
+            <div id="movies" class="hobby-section">
+                <div class="hobby-container">
+                    <div class="hobby-header">
+                        <h3>🎬 My Favorite Movies</h3>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-card">
+                            <img class="hobby-img" src="movie_qingyunian.jpg" alt="电视剧">
+                            <div class="hobby-card-content">
+                                <h4><i class="fas fa-film"></i> 《庆余年》</h4>
+                                <p> </p>
+                                <div class="hobby-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value"></div>
+                                        <div class="stat-label">上映年份</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">电视剧</div>
+                                        <div class="stat-label">类型</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hobby-card">
+                            <img class="hobby-img" src="movie_meiguidegushi.jpg" alt="电视剧">
+                            <div class="hobby-card-content">
+                                <h4><i class="fas fa-tv"></i> 《玫瑰的故事》</h4>
+                                <p> </p>
+                                <div class="hobby-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value"></div>
+                                        <div class="stat-label">上映年份</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">电视剧</div>
+                                        <div class="stat-label">类型</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hobby-card">
+                            <img class="hobby-img" src="movie_sherlock.jpg" alt="电影">
+                            <div class="hobby-card-content">
+                                <h4><i class="fas fa-chart-line"></i> 《神探夏洛克》</h4>
+                                <p></p>
+                                <div class="hobby-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value"></div>
+                                        <div class="stat-label">上映年份</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">电影</div>
+                                        <div class="stat-label">类型</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="hobby-card">
+						    <img class="hobby-img" src="moive_interstellar.jpg" alt="电影">
+						    <div class="hobby-card-content">
+						        <h4><i class="fas fa-film"></i> 《星际穿越》</h4>
+						        <p></p>
+						        <div class="hobby-stats">
+						            <div class="stat-item">
+						                <div class="stat-value">2014</div>
+						                <div class="stat-label">上映年份</div>
+						            </div>
+						            <div class="stat-item">
+						                <div class="stat-value">电影</div>
+						                <div class="stat-label">类型</div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div class="hobby-card">
+						    <img class="hobby-img" src="movie_inception.png" alt="电影">
+						    <div class="hobby-card-content">
+						        <h4><i class="fas fa-film"></i> 《盗梦空间》</h4>
+						        <p></p>
+						        <div class="hobby-stats">
+						            <div class="stat-item">
+						                <div class="stat-value">2010</div>
+						                <div class="stat-label">上映年份</div>
+						            </div>
+						            <div class="stat-item">
+						                <div class="stat-value">电影</div>
+						                <div class="stat-label">类型</div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div class="hobby-card">
+						    <img class="hobby-img" src="movie_xianni.png" alt="动漫">
+						    <div class="hobby-card-content">
+						        <h4><i class="fas fa-film"></i> 《仙逆》</h4>
+						        <p></p>
+						        <div class="hobby-stats">
+						            <div class="stat-item">
+						                <div class="stat-value">2024</div>
+						                <div class="stat-label">上映年份</div>
+						            </div>
+						            <div class="stat-item">
+						                <div class="stat-value">动漫</div>
+						                <div class="stat-label">类型</div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 书籍部分 -->
+            <div id="books" class="hobby-section">
+                <div class="hobby-container">
+                    <div class="hobby-header">
+                        <h3>📚 Book</h3>
+                    </div>
+                    <div class="books-grid">
+                        <div class="book-card">
+                            <img class="book-img" src="book_python.jpg" alt="Python编程从入门到实践">
+                            <div class="book-info">
+                                <h4>《Python编程:从入门到实践》</h4>
+                                <span class="author">Eric Mathers</span>
+                                <p>这本书是统计学入门的经典教材，深入浅出地介绍了各种统计学习方法，包括线性回归、分类、重采样方法等。</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        
+                        <div class="book-card">
+                            <img class="book-img" src="book_R.jpg" alt="R语言入门与实践">
+                            <div class="book-info">
+                                <h4>《R语言入门与实践》</h4>
+                                <span class="author">Garrett Grolemund</span>
+                                <p>中国科幻文学的里程碑之作，讲述了地球人类文明和三体文明的信息交流、生死搏杀及两个文明在宇宙中的兴衰历程。</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        
+                        <div class="book-card">
+                            <img class="book-img" src="book_deeplearn.jpg" alt="Python深度学习">
+                            <div class="book-info">
+                                <h4>《Python深度学习》</h4>
+                                <span class="author">François Chalé</span>
+                                <p>这本书讲述了人类从石器时代至21世纪的演化与发展史，并将人类历史分为四个阶段：认知革命、农业革命、人类的融合统一与科学革命。</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系页面 -->
+    <section id="contact" class="page">
+        <div class="container">
+            <div class="section-title">
+                <h2>联系我</h2>
+                <p>Among millions of people, it's fortunate to meet you.</p>
+            </div>
+    
+            <div class="contact-container">
+                <!-- 左侧联系信息卡片 -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>地址</h3>
+                            <p>桂林市雁山区广西师范大学</p>
+                        </div>
+                    </div>
+    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>邮箱</h3>
+                            <p>deathrite@stu.gxnu.edu.cn</p>
+                        </div>
+                    </div>
+    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>电话</h3>
+                            <p>+86 不方便告知，麻烦邮箱联系</p>
+                        </div>
+                    </div>
+    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>学习平台</h3>
+                            <p>GXNU</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 右侧本地图片展示 -->
+                <div class="contact-image">
+                    <img src="contact_photo.jpg" alt="联系我图片">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><img src="fonter_photo1.jpg" alt="wechat"></a>
+                <a href="#"><img src="fonter_photo2.jpg" alt="bilbil"></a>
+                <a href="#"><img src="fonter_photo3.jpg" alt="tiktok"></a>
+                <a href="#"><img src="fonter_photo4.jpg" alt="meituan"></a>
+                <a href="#"><img src="fonter_photo5.jpg" alt="jingdong"></a>
+				<a href="#"><img src="fonter_photo6.jpg" alt="eleme"></a>
+            </div>
+            <p>&copy; 2025 RuiaaZ|GitHub</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
