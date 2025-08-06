@@ -11,6 +11,36 @@ document.addEventListener('DOMContentLoaded', function() {
     const hobbyBtns = document.querySelectorAll('.hobby-btn');
     const hobbySections = document.querySelectorAll('.hobby-section');
 
+    // 图片懒加载优化
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.src; // 触发加载
+                img.classList.add('loaded');
+                observer.unobserve(img);
+            }
+        });
+    }, {
+        rootMargin: '50px 0px',
+        threshold: 0.01
+    });
+
+    // 观察所有懒加载图片
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+        imageObserver.observe(img);
+    });
+
+    // 性能监控
+    if ('performance' in window) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log('页面加载时间:', perfData.loadEventEnd - perfData.fetchStart, 'ms');
+            }, 0);
+        });
+    }
+
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }

@@ -18,11 +18,12 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', 'YouYuan', 'Yuanti SC', sans-serif;
+            will-change: auto;
         }
         
         body {
             background: linear-gradient(rgba(249, 247, 240, 0.9) 0%, rgba(249, 247, 240, 0.95) 100%), 
-                        url('background.jpg') center/cover fixed no-repeat;
+                        url('images/background.jpg') center/cover fixed no-repeat;
             color: var(--dark-green);
             line-height: 1.6;
             overflow-x: hidden;
@@ -47,6 +48,7 @@
             height: var(--nav-height);
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+            will-change: transform;
         }
         
         nav {
@@ -180,6 +182,8 @@
             transition: var(--transition);
             background: var(--cloud-white);
             padding: 10px;
+            transform: translateZ(0);
+            backface-visibility: hidden;
         }
         
         .hero-image:hover img {
@@ -538,6 +542,8 @@
             width: 100%;
             height: 520px;
             object-fit: cover;
+            transform: translateZ(0);
+            backface-visibility: hidden;
         }
         
         .hobby-card-content {
@@ -763,6 +769,8 @@
             width: 100%;
             height: auto;
             object-fit: cover;
+            transform: translateZ(0);
+            backface-visibility: hidden;
         }
         
         .book-info {
@@ -903,6 +911,20 @@
 		    border-radius: 50%;
 		    pointer-events: none; /* 保证 hover 动作触发在 a 标签 */
 		}
+        
+        /* 图片懒加载动画 */
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+        
+        img[loading="eager"] {
+            opacity: 1;
+        }
         
         /* 响应式设计 */
         @media (max-width: 992px) {

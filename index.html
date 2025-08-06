@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RuiaaZ-Page</title>
+    <meta name="description" content="钟瑞的个人主页 - 展示技能、爱好和联系方式">
+    <meta name="keywords" content="钟瑞,个人主页,Python,R语言,数据分析">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <title>钟瑞的个人主页</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-	<link rel="icon" href="logo.png" type="image/png">
+    <!-- 预加载关键图片 -->
+    <link rel="preload" href="images/logo.png" as="image">
+    <link rel="preload" href="images/touxiang.jpg" as="image">
+    <link rel="preload" href="images/background.jpg" as="image">
+	<link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
     <!-- 装饰云朵 -->
@@ -20,7 +27,7 @@
             <nav>
                 <a href="#home" class="logo nav-link" data-page="home">
                     <div class="logo-img">
-                        <img src="logo.png" alt="logo" style="width: 100%; height: 100%; border-radius: 50%;">
+                        <img src="images/logo.png" alt="logo" style="width: 100%; height: 100%; border-radius: 50%;">
                     </div>
                     <span>RuiaaZ</span>
                 </a>
@@ -51,7 +58,7 @@
 				Keep your passion alive, and there will be many moments telling you - life is gentle and romantic."</p>
             </div>
             <div class="hero-image">
-                <img src="touxiang.jpg" alt="钟瑞照片">
+                <img src="images/touxiang.jpg" alt="钟瑞照片" loading="eager">
             </div>
         </div>
     </section>
@@ -104,7 +111,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="about-me.png" alt="校园生活" style="width:100%; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                    <img src="images/about-me.png" alt="校园生活" style="width:100%; border-radius: var(--border-radius); box-shadow: var(--shadow);" loading="lazy">
                 </div>
             </div>
         </div>
@@ -122,7 +129,7 @@
             <div class="skills-container">
                 <!-- Python -->
                 <div class="skill-card">
-                    <img class="skill-logo" src="skill_python.png" alt="Python">
+                    <img class="skill-logo" src="images/skill_python.png" alt="Python" loading="lazy">
                     <div class="skill-content">
                         <h3>Python</h3>
                         <p>Python 是一门功能强大的编程语言，广泛应用于数据分析、人工智能与自动化任务，语法简洁、易于上手。</p>
@@ -131,7 +138,7 @@
     
                 <!-- R -->
                 <div class="skill-card">
-                    <img class="skill-logo" src="skill_r.png" alt="R">
+                    <img class="skill-logo" src="images/skill_r.png" alt="R" loading="lazy">
                     <div class="skill-content">
                         <h3>R语言</h3>
                         <p>R 是统计分析的专业工具，拥有强大的可视化与建模能力，适合做回归分析、时间序列分析与绘图。</p>
@@ -140,7 +147,7 @@
     
                 <!-- HTML -->
                 <div class="skill-card">
-                    <img class="skill-logo" src="skill_html.png" alt="HTML">
+                    <img class="skill-logo" src="images/skill_html.png" alt="HTML" loading="lazy">
                     <div class="skill-content">
                         <h3>HTML</h3>
                         <p>HTML 是网页结构的核心语言，用于构建网页的内容框架，是前端开发的基础技能之一。</p>
@@ -149,7 +156,7 @@
     
                 <!-- CSS -->
                 <div class="skill-card">
-                    <img class="skill-logo" src="skill_css.png" alt="CSS">
+                    <img class="skill-logo" src="images/skill_css.png" alt="CSS" loading="lazy">
                     <div class="skill-content">
                         <h3>CSS</h3>
                         <p>CSS 主要用于网页的样式设计，可以控制颜色、布局、字体等，是实现网页美观的关键技术。</p>
@@ -158,7 +165,7 @@
     
                 <!-- JavaScript -->
                 <div class="skill-card">
-                    <img class="skill-logo" src="skill_javascript.png" alt="JavaScript">
+                    <img class="skill-logo" src="images/skill_javascript.png" alt="JavaScript" loading="lazy">
                     <div class="skill-content">
                         <h3>JavaScript</h3>
                         <p>JavaScript 是网页交互的灵魂语言，能实现动态效果、数据交互等，是现代前端开发的核心技术之一。</p>
@@ -202,7 +209,7 @@
                     </div>
                     <div class="hobby-content">
                         <div class="hobby-card">
-                            <img class="hobby-img" src="sport_photo1.jpg" alt="篮球">
+                            <img class="hobby-img" src="images/sport_photo1.jpg" alt="篮球" loading="lazy">
                             <div class="hobby-card-content">
                                 <h4><i class="fas fa-basketball-ball"></i> 篮球</h4>
                                 <p>篮球是少年疲惫生活里的英雄</p>
@@ -210,7 +217,7 @@
                         </div>
                         
                         <div class="hobby-card">
-                            <img class="hobby-img" src="sport_photo2.jpg" alt="健身">
+                            <img class="hobby-img" src="images/sport_photo2.jpg" alt="健身" loading="lazy">
                             <div class="hobby-card-content">
                                 <h4><i class="fas fa-dumbbell"></i> 健身</h4>
                                 <p>自律才能更自由</p>
@@ -264,7 +271,7 @@
                         <div class="playlist">
                             <h3>我的喜欢歌曲</h3>
                             <div class="playlist-item active" data-src="music1.mp3">
-                                <img src="music-photo1.png" alt="形容">
+                                <img src="images/music-photo1.png" alt="形容" loading="lazy">
                                 <div class="playlist-info">
                                     <h4>形容</h4>
                                     <p>沈以诚 | 流行</p>
@@ -273,7 +280,7 @@
                             </div>
                             
                             <div class="playlist-item" data-src="music2.flac">
-                                <img src="music-photo2.png" alt="稻香">
+                                <img src="images/music-photo2.png" alt="稻香" loading="lazy">
                                 <div class="playlist-info">
                                     <h4>稻香</h4>
                                     <p>周杰伦 | 流行</p>
@@ -282,7 +289,7 @@
                             </div>
                             
                             <div class="playlist-item" data-src="music3.mp3">
-                                <img src="music-photo3.png" alt="爱我还是爱他">
+                                <img src="images/music-photo3.png" alt="爱我还是爱他" loading="lazy">
                                 <div class="playlist-info">
                                     <h4>爱我还是爱他</h4>
                                     <p>陶喆 | 流行</p>
@@ -291,7 +298,7 @@
                             </div>
                             
                             <div class="playlist-item" data-src="music4.mp3">
-                                <img src="music-photo4.png" alt="我们的明天">
+                                <img src="images/music-photo4.png" alt="我们的明天" loading="lazy">
                                 <div class="playlist-info">
                                     <h4>我们的明天</h4>
                                     <p>鹿晗 | 流行</p>
@@ -311,7 +318,7 @@
                     </div>
                     <div class="hobby-content">
                         <div class="hobby-card">
-                            <img class="hobby-img" src="movie_qingyunian.jpg" alt="电视剧">
+                            <img class="hobby-img" src="images/movie_qingyunian.jpg" alt="电视剧" loading="lazy">
                             <div class="hobby-card-content">
                                 <h4><i class="fas fa-film"></i>《庆余年》</h4>
                                 <p>主演：张若昀、李沁、陈道明、吴刚、辛芷蕾、宋轶、郭麒麟等。</p>
@@ -333,7 +340,7 @@
                         </div>
                         
                         <div class="hobby-card">
-                            <img class="hobby-img" src="movie_meiguidegushi.jpg" alt="电视剧">
+                            <img class="hobby-img" src="images/movie_meiguidegushi.jpg" alt="电视剧" loading="lazy">
                             <div class="hobby-card-content">
                                 <h4><i class="fas fa-tv"></i>《玫瑰的故事》</h4>
 								<p>主演：刘亦菲、佟大为、林更新、万茜、霍建华、彭冠英等。</p>
@@ -355,7 +362,7 @@
                         </div>
                         
                         <div class="hobby-card">
-                            <img class="hobby-img" src="movie_sherlock.jpg" alt="电影">
+                            <img class="hobby-img" src="images/movie_sherlock.jpg" alt="电影" loading="lazy">
                             <div class="hobby-card-content">
                                 <h4><i class="fas fa-video"></i>《神探夏洛克》</h4>
 								<p>主演：本尼迪克特.康伯巴奇、马丁.费瑞曼等。</p>
@@ -376,7 +383,7 @@
                         </div>
 						
 						<div class="hobby-card">
-						    <img class="hobby-img" src="moive_interstellar.jpg" alt="电影">
+						    <img class="hobby-img" src="images/moive_interstellar.jpg" alt="电影" loading="lazy">
 						    <div class="hobby-card-content">
 						        <h4><i class="fas fa-rocket"></i>《星际穿越》</h4>
 						        <p>主演：马修·麦康纳、安妮·海瑟薇、杰西卡·查斯坦等。</p>
@@ -396,7 +403,7 @@
 						    </div>
 						</div>
 						<div class="hobby-card">
-						    <img class="hobby-img" src="movie_inception.png" alt="电影">
+						    <img class="hobby-img" src="images/movie_inception.png" alt="电影" loading="lazy">
 						    <div class="hobby-card-content">
 						        <h4><i class="fas fa-globe"></i>《盗梦空间》</h4>
 								<p>主演：莱昂纳多.迪卡普里、艾伦.佩姬、约瑟夫.高登.莱维特等。</p>
@@ -418,7 +425,7 @@
 						    </div>
 						</div>
 						<div class="hobby-card">
-						    <img class="hobby-img" src="movie_xianni.png" alt="动漫">
+						    <img class="hobby-img" src="images/movie_xianni.png" alt="动漫" loading="lazy">
 						    <div class="hobby-card-content">
 						        <h4><i class="fas fa-spinner"></i>《仙逆》</h4>
 						        <p>《仙逆》是一部根据耳根笔下的仙侠网络小说改编的武侠网络动画，讲述了一个平凡少年王林逆仙而修，求的不仅是长生，更多的是摆脱那背后的蝼蚁之身。他坚信道在人为，以平庸的资质踏入修真仙途，历经坎坷风雨，凭着其聪睿的心智，
@@ -447,7 +454,7 @@
                     </div>
                     <div class="books-grid">
                         <div class="book-card">
-                            <img class="book-img" src="book_python.jpg" alt="Python编程从入门到实践">
+                            <img class="book-img" src="images/book_python.jpg" alt="Python编程从入门到实践" loading="lazy">
                             <div class="book-info">
                                 <h4><i class="fas fa-book"></i>《Python编程:从入门到实践》</h4>
                                 <span class="author">作者：Eric Mathers</span>
@@ -458,7 +465,7 @@
                         </div>
                         
                         <div class="book-card">
-                            <img class="book-img" src="book_R.jpg" alt="R语言入门与实践">
+                            <img class="book-img" src="images/book_R.jpg" alt="R语言入门与实践" loading="lazy">
                             <div class="book-info">
                                 <h4><i class="fas fa-bookmark"></i>《R语言入门与实践》</h4>
                                 <span class="author">作者：Garrett Grolemund</span>
@@ -469,7 +476,7 @@
                         </div>
                         
                         <div class="book-card">
-                            <img class="book-img" src="book_deeplearn.jpg" alt="Python深度学习">
+                            <img class="book-img" src="images/book_deeplearn.jpg" alt="Python深度学习" loading="lazy">
                             <div class="book-info">
                                 <h4><i class="fas fa-book-open"></i>《Python深度学习》</h4>
                                 <span class="author">作者：François Chalé</span>
@@ -540,7 +547,7 @@
     
                 <!-- 右侧本地图片展示 -->
                 <div class="contact-image">
-                    <img src="contact_photo.jpg" alt="联系我图片">
+                    <img src="images/contact_photo.jpg" alt="联系我图片" loading="lazy">
                 </div>
             </div>
         </div>
@@ -551,17 +558,32 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#"><img src="fonter_photo1.jpg" alt="wechat"></a>
-                <a href="#"><img src="fonter_photo2.jpg" alt="bilbil"></a>
-                <a href="#"><img src="fonter_photo3.jpg" alt="tiktok"></a>
-                <a href="#"><img src="fonter_photo4.jpg" alt="meituan"></a>
-                <a href="#"><img src="fonter_photo5.jpg" alt="jingdong"></a>
-				<a href="#"><img src="fonter_photo6.jpg" alt="eleme"></a>
+                <a href="#"><img src="images/fonter_photo1.jpg" alt="wechat" loading="lazy"></a>
+                <a href="#"><img src="images/fonter_photo2.jpg" alt="bilbil" loading="lazy"></a>
+                <a href="#"><img src="images/fonter_photo3.jpg" alt="tiktok" loading="lazy"></a>
+                <a href="#"><img src="images/fonter_photo4.jpg" alt="meituan" loading="lazy"></a>
+                <a href="#"><img src="images/fonter_photo5.jpg" alt="jingdong" loading="lazy"></a>
+				<a href="#"><img src="images/fonter_photo6.jpg" alt="eleme" loading="lazy"></a>
             </div>
             <p>&copy; 2025 RuiaaZ|GitHub</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- Service Worker 注册 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
